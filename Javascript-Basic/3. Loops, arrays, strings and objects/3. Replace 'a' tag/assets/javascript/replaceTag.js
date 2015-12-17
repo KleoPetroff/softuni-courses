@@ -9,7 +9,7 @@
             .replace(/(<a)/g, '[URL')
             .replace(/">/g, '"]')
             .replace(/(<\/a>)/g, '[/URL]')
-            .replace(/"/g, '')
+            .replace(/"/g, '');
     };
 
     submitButton.addEventListener('click', function () {
