@@ -1,5 +1,5 @@
 var calcCircleArea = (function() {
-    "use strict";
+    'use strict';
 
     var domElement = document.getElementById('circleArea');
 
@@ -13,7 +13,7 @@ var calcCircleArea = (function() {
 
     return {
         calculate: domInsertion
-    }
+    };
 }());
 
 calcCircleArea.calculate(7);

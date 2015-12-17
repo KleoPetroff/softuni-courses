@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 var getDecimal = prompt('Enter a decimal number');
 

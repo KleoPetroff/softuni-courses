@@ -29,11 +29,10 @@ var CylinderVolume = (function() {
         inputToArray: inputToArray,
         cylinderVolume: cylinderVolume,
         domPopulate: domPopulate
-    }
+    };
 }());
 
 inputs.calculateButton.addEventListener('click', function () {
-
     var radius = parseFloat(inputs.cylinderRadius.value),
         height = parseFloat(inputs.cylinderHeight.value),
         inputArray = CylinderVolume.inputToArray(radius, height),

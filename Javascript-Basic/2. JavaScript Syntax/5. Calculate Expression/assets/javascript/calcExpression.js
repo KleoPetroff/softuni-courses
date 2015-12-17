@@ -8,5 +8,5 @@
         var expression = document.getElementById('expression');
 
         result.innerHTML = eval(expression.value); // DON'T EVER, EVER USE eval()
-    })
+    });
 }());
