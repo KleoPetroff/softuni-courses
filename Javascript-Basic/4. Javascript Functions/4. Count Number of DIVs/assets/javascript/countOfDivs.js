@@ -8,7 +8,10 @@
     };
 
     var countDivs = function (inputHTML) {
-        return (inputHTML.match(/(<\/div>)/g) || []).length;
+        var divsCount = (inputHTML.match(/(<\/div>)/g) || []).length,
+            openDivCount = (inputHTML.match(/(<div)/g) || []).length;
+        if (openDivCount === divsCount) return divsCount;
+        else return 'Invalid HTML input!'
     };
 
     inputs.button.addEventListener('click', function() {
