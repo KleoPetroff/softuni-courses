@@ -1,0 +1,13 @@
+.email-validation { width: 296px }
+
+input,
+.validation {
+    font-size:24px;
+    display: block;
+}
+
+.validation {
+    height: 25px;
+    padding: 5px 0;
+    margin-bottom: 5px;
+}
