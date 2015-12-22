@@ -1,0 +1,24 @@
+.webinar {
+    position: relative;
+    min-height: 519px;
+}
+
+input,
+label {
+    display: block;
+}
+
+.red { color: #ff0000 }
+
+.invoice,
+.button {
+    display: inline;
+}
+
+.invoice-inputs { display: none }
+
+.webinar-buttons {
+    position: absolute;
+    bottom: 0;
+    margin-top: 10px;
+}

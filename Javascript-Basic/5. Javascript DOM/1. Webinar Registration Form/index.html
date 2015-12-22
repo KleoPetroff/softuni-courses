@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Webinar Registration Form</title>
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
+        <h2>Регистрация за Уебинар</h2>
+        <form class="webinar" id="webinarForm">
+            <label for="name">Име и Фамилия:<span class="red">*</span></label>
+            <input id="name" type="text">
+            <label for="address">Адрес:</label>
+            <input id="address" type="text">
+            <label for="place">Населено Място:</label>
+            <input id="place" type="text">
+            <label for="zipCode">Пощенски Код:</label>
+            <input id="zipCode" type="text">
+            <label for="email">Email:<span class="red">*</span></label>
+            <input id="email" type="text">
+            <label for="phone">Телефон:<span class="red">*</span></label>
+            <input id="phone" type="text">
+            <label for="date">Дата:<span class="red">*</span></label>
+            <input id="date" type="text" placeholder="mm/dd/yyyy">
+
+            <input class="invoice" id="invoiceCheck" type="checkbox"><label class="invoice" for="invoiceCheck">Желая Фактура</label>
+
+            <div class="invoice-inputs" id="invoiceInputs">
+                <label for="company">Фирма/Организация:<span class="red">*</span></label>
+                <input id="company" type="text">
+                <label for="ceoName">МОЛ:<span class="red">*</span></label>
+                <input id="ceoName" type="text">
+                <label for="eikNumber">ЕИК:<span class="red">*</span></label>
+                <input id="eikNumber" type="text">
+                <label for="inDDS">ИН по ДДС:<span class="red">*</span></label>
+                <input id="inDDS" type="text">
+                <label for="companyAddress">Фирма/Организация:<span class="red">*</span></label>
+                <input id="companyAddress" type="text">
+            </div>
+
+            <div class="webinar-buttons">
+                <input class="button" id="submit" type="button" value="Регистрирай се">
+                <input class="button" id="clear" type="button" value="Изчисти">
+            </div>
+        </form>
+
+        <script src="assets/javascript/webinar.js"></script>
+    </body>
+</html>
