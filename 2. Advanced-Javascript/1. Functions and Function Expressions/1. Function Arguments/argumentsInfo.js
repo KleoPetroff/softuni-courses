@@ -24,12 +24,8 @@
             return type.match(/function (.*)\(/)[1].toLocaleLowerCase();
         };
 
-        var getType = function () {
-            var args = Array.prototype.slice.call(arguments);
-
-            return args.map(function (arg) {
-                return arg && typeof args === 'object' ? checkType(arg) : typeof arg;
-            });
+        var getType = function (element) {
+             return element === 'object' ? checkType(element) : typeof element;
         };
 
         var result = function () {
@@ -37,10 +33,10 @@
             var result = '';
 
             args.forEach(function (element) {
-               if (getType(element)[0] === 'array') {
-                   result += flatten(element) + ' (' + getType(element)[0] + ')\n';
+               if (getType(element) === 'array') {
+                   result += flatten(element) + ' (' + getType(element) + ')\n';
                } else {
-                   result += element + ' (' + getType(element)[0] + ')\n';
+                   result += element + ' (' + getType(element) + ')\n';
                }
             });
 
